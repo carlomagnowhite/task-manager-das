@@ -8,6 +8,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
 import { HttpClientModule } from '@angular/common/http';
 import { SupabaseService } from '../services/supabase.service';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { SupabaseService } from '../services/supabase.service';
     MatCardModule,
     MatChipsModule, 
     HttpClientModule,
+    MatButtonModule
   ],
   exports: [CardComponent, ContainerComponent],
   providers: [SupabaseService],

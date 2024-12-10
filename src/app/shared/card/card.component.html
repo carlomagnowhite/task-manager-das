@@ -1,19 +1,21 @@
 <mat-list>
-  <mat-list-item style="height: 300px; overflow-y: auto;">
-    <mat-card appearance="outlined">
-      <mat-card-header>
-        <mat-card-title> Titulo: {{data.title}}</mat-card-title>
-        <mat-card-subtitle> ID: {{data.id}}</mat-card-subtitle>
+  <mat-list-item style="height: 350px; overflow-y: hidden;">
+    <mat-card appearance="outlined" class="styled-card">
+      <mat-card-header class="card-header">
+        <mat-card-title class="card-title">Título: {{ data.title }}</mat-card-title>
+        <mat-card-subtitle class="card-subtitle">ID: {{ data.id }}</mat-card-subtitle>
       </mat-card-header>
-      <mat-card-content style="word-wrap: break-word; white-space: normal;">
-        <p>{{data.description}}</p>
-        <span>Fecha: <p>{{data.created_at}}</p></span>
-        <span>Status: <p>{{data.status}}</p></span>
+      <mat-card-content class="card-content">
+        <p class="card-description">{{ data.description }}</p>
+        <div class="card-details">
+          <span>Fecha: <p>{{ data.created_at | date: 'medium' }}</p></span>
+          <span>Status: <strong>{{ data.status }}</strong></span>
+        </div>
       </mat-card-content>
-      <mat-card-footer class="example-card-footer">
-        <mat-chip-set aria-label="Chihuahua traits">
-          <mat-chip>Editar</mat-chip>
-          <mat-chip (click)="deleteTasks(data.id)">Eliminar</mat-chip>
+      <mat-card-footer class="card-footer">
+        <mat-chip-set>
+          <mat-chip class="action-chip" (click)="openTaskModal()">Editar</mat-chip>
+          <mat-chip class="delete-chip" (click)="deleteTasks(data.id)">Eliminar</mat-chip>
         </mat-chip-set>
       </mat-card-footer>
     </mat-card>

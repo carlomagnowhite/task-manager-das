@@ -1,0 +1,68 @@
+/* Contenedor principal del modal */
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espaciado entre los elementos */
+    padding: 24px; /* Espaciado interno */
+    background-color: white; /* Fondo blanco */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+    max-width: 500px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado en la pantalla */
+  }
+  
+  /* Título del modal */
+  h2[mat-dialog-title] {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3f51b5; /* Color azul moderno */
+    margin: 0; /* Sin margen */
+    text-align: center;
+  }
+  
+  /* Contenido del modal */
+  mat-form-field {
+    width: 100%; /* Los campos ocupan todo el ancho */
+    margin-bottom: 16px; /* Espaciado entre campos */
+  }
+  
+  textarea {
+    resize: none; /* Evita que el usuario pueda redimensionar el campo */
+  }
+  
+  /* Botones de acciones */
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end; /* Botones alineados a la derecha */
+    gap: 12px; /* Espaciado entre botones */
+  }
+  
+  /* Botón cancelar */
+  .cancel-button {
+    background-color: #f8d7da; /* Rojo claro */
+    color: #d32f2f; /* Rojo moderno */
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cancel-button:hover {
+    background-color: #f5c6cb; /* Rojo un poco más intenso */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+  }
+  
+  /* Botón guardar */
+  .save-button {
+    background-color: #e3f2fd; /* Azul claro */
+    color: #1976d2; /* Azul moderno */
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #bbdefb; /* Azul un poco más intenso */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+  }  
