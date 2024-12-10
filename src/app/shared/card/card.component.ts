@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { SupabaseService } from '../../services/supabase.service';
+import { Task } from '../../interfaces/Task.interface';
 
 @Component({
   selector: 'app-card',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-
+  @Input() data: any ;
 }
