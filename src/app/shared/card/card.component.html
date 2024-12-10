@@ -1,0 +1,21 @@
+<mat-list>
+  <mat-list-item style="height: 300px; overflow-y: auto;">
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <mat-card-title> Titulo: {{data.title}}</mat-card-title>
+        <mat-card-subtitle> ID: {{data.id}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content style="word-wrap: break-word; white-space: normal;">
+        <p>{{data.description}}</p>
+        <span>Fecha: <p>{{data.created_at}}</p></span>
+        <span>Status: <p>{{data.status}}</p></span>
+      </mat-card-content>
+      <mat-card-footer class="example-card-footer">
+        <mat-chip-set aria-label="Chihuahua traits">
+          <mat-chip>Editar</mat-chip>
+          <mat-chip>Eliminar</mat-chip>
+        </mat-chip-set>
+      </mat-card-footer>
+    </mat-card>
+  </mat-list-item>
+</mat-list>
