@@ -1,0 +1,7 @@
+<div class="father">
+    <div class="container">
+      <app-card *ngFor="let item of data" [data]="item" (taskDeleted)="getTasks()"></app-card>
+    </div>
+    <button mat-raised-button class="add-button" (click)="openTaskModal()">Añadir</button>
+  </div>
+  
