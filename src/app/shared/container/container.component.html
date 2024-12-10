@@ -1,5 +1,5 @@
 <div class="father">
     <div class="container">
-        <app-card *ngFor="let item of data" [data]="item"></app-card>
+        <app-card *ngFor="let item of data" [data]="item" (taskDeleted)="getTasks()"></app-card>
     </div>
 </div>
