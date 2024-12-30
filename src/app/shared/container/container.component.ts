@@ -48,6 +48,7 @@ export class ContainerComponent {
       title: newTask.title,
       description: newTask.description,
       status: newTask.status,
+      created_at: 'now()'
     };
     try {
       this.service.addTask(newTask).subscribe({

@@ -43,7 +43,7 @@ export class TaskModalComponent {
       id: this.isEdit ? this.data.id : null,
       title: this.title,
       description: this.description,
-      status: this.status,
+      status: this.status
     });
   }
 
